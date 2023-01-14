@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <h1 class="main">Payment Form</h1>
+            <hr>
+            <h2>User Information</h2>
+            <p>Name: *
+                <input type="text"required name="name" placeholder="Shashwat Aryan Gupta">
+            </p>
+            <p>
+                <fieldset>
+                    <legend>Gender</legend>
+                    Male <input type="radio" name="gender" id="male" value="H" required> Female <input type="radio" name="gender" id="femlae" value="H" required>
+                </fieldset>
+                *
+            </p>
+            <p>
+
+                Address: *
+                <p><textarea placeholder="Enter Your Adress" name="adress" id="" cols="150" rows="10"></textarea></p>
+            </p>
+            <p>
+                Email:
+                <input type="email" name="email" id="email" required placeholder="example@gmail.com">
+            </p>
+            <p>
+                Pincode:
+                <input type="number" name="pincode" id="pincode" placeholder="123456">
+            </p>
+            <h2>Payment Information</h2>
+            <p>
+                Card Type:
+                <select name="card_type" id="card_type" required>
+                    <option value="">--select card type--</option>
+                    <option value="">Vise</option>
+                    <option value="">MasterCard</option>
+                    <option value="">Rupay</option>
+                </select>
+            </p>
+            <p>
+                Select Bank:
+                <select name="select_bank" id="select_bank">
+                    <option value="select">--Select Bank--</option>
+                    <option value="BOI">Bank of India</option>
+                    <option value="SBI">State Bank of India</option>
+                    <option value="CB">Canara Bank</option>
+                    <option value="PNB">Punjab National Bank</option>
+                    <option value="UB">Union Bank</option>
+                </select>
+            </p>
+            <p>
+                CVV
+                <input type="number" name="cvv" id="cvv" placeholder="123">
+
+            </p>
+            <p>
+                <input type="submit" value="Pay Now">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
